@@ -12,4 +12,4 @@ Your the docset is now sitting in this folder, ready to be installed locally or 
 
 # Notes
 
-This repo includes a slightly customized javadoc template through overview.html so it can hide the built-in javadoc search. This is done because the search field autofocuses so it makes it harder to use scroll the docs on the page via keyboard, and because the javadocs search feature is unecessary since Dash already includes great searching abilities!
+The default javadoc doclet includes its own search functionality, which is unnecessary since Dash already includes great search functionality. Also, the field autofocuses on page load, which means it breaks keyboard scrolling for the page. Thus, the javadoc search functionality has been removed with some monkeypatching in the doc generation script.
