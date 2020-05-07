@@ -14,3 +14,7 @@ rm docs/search.js
 
 # Build the Dash docset
 ./javadocset "Bitwig Studio" docs/
+
+# Copy the icon file into the docset so it's recognized (per the official docs
+# at https://kapeli.com/docsets#improveDocset)
+cp ./icon.png "./Bitwig Studio.docset/"
