@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Clean
-rm -rf "Bitwig Studio.docset"
+rm -rf "Bitwig Studio Extension.docset"
 rm -rf docs
 mkdir docs
 
@@ -13,8 +13,8 @@ echo "\n.navListSearch { display: none !important; }" >>docs/stylesheet.css
 rm docs/search.js
 
 # Build the Dash docset
-./javadocset "Bitwig Studio" docs/
+./javadocset "Bitwig Studio Extension" docs/
 
 # Copy the icon file into the docset so it's recognized (per the official docs
 # at https://kapeli.com/docsets#improveDocset)
-cp ./icon.png "./Bitwig Studio.docset/"
+cp ./icon.png "./Bitwig Studio Extension.docset/"
