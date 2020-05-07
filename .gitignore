@@ -1,0 +1,5 @@
+javadocset
+*.jar
+docs
+.DS_Store
+Bitwig Studio.docset
